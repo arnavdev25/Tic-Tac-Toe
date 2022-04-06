@@ -1,0 +1,81 @@
+body {
+    background-color: #222;
+    text-align: center;
+}
+h1 {
+    color: azure;
+    margin-top: 60px;
+    font-size: 40px;
+    /* border-bottom: 1px solid #fff; */
+    /* width: 20%; */
+    margin: auto;
+}
+#main {
+    display: grid;
+    margin: auto;
+    width: 300px;
+    grid-template-columns: repeat(3,100px);
+    margin: auto;
+    margin-top: 50px;
+    
+}
+#main > div {
+border: 1px solid #fff;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+color: #fff;
+
+}
+#main > #div1 , #main >  #div4 ,#main >  #div7 {
+    border-left: none;
+}
+#main > #div1 , #main >  #div2 ,#main >  #div3 {
+    border-top: none;
+}
+#main > #div3 , #main >  #div6 ,#main >  #div9 {
+    border-right: none;
+}
+#main > #div7 , #main >  #div8 ,#main >  #div9 {
+    border-bottom: none;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:red;
+	border-radius:15px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px red;
+    margin-top: 30px;
+    width: 150px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+#win,#alert {
+    color: #fff;
+    font-size: 25px ;
+    margin-top: 20px;
+    display: none;
+}
+#turn {
+    color: #fff;
+    height: 20px;
+    /* position: fixed; */
+}
